@@ -8,7 +8,7 @@
     <label for="name" > Username: </label>
     <input id ="name" type="text" name="username" placeholder="Email or phone" /><br>
     <label for="pwd"> Password: </label>
-    <input id ="pwd" type="password" name="password" placeholder="Enter password" pattern="(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':\\"\\|,.<>\/?]).{8,}"   required title="Password must have atleast 8 characters,atleast one capital letter and one special character"/><br>
+    <input id ="pwd" type="password" name="password" placeholder="Enter password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"  required title="Password must have atleast 8 characters,atleast one capital letter and one special character and 1 number"/><br>
     <input type="submit" value="Login" /> 
 </form>
 </body>
